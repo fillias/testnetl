@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+	<title></title>
 </head>
 <body>
-<h1>test gugli native</h1>
-<div id="test">
-<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- centrumHP-native-mobile -->
-<ins class="adsbygoogle" style="display:inline-block;min-width:320px;max-width:1200px;width:100%;height:100px" data-ad-client="ca-pub-5439216666921212" data-ad-slot="1473364664"></ins>
-<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
-</div>
+<script type="text/javascript">
+(function(){
 
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    displayProjects(JSON.parse(this.responseText));
+  }
+};
+xmlhttp.open('GET', 'https://i0.cz/realitymix/ext-data/hp_short/adverts_short.xml');
+xmlhttp.send();
 
+})();
+
+</script>
 </body>
 </html>
